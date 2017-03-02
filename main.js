@@ -18,16 +18,9 @@ function init() {
   newbutton.appendChild(document.createTextNode('Add All Coupons'));
   newbutton.addEventListener('click', runSelect);
 
-  // Try inserting the button after stacking-message
-  var stacking_message = document.getElementsByClassName('stacking-message')[0];
-  if (stacking_message)
-    stacking_message.parentNode.insertBefore(newbutton, stacking_message.nextSibling);
-  else {
-    // On some coupon pages, stacking_message does not exist.
-    // Try inserting the button before pages.
-    var pages = document.getElementsByClassName('pages')[0];
-    pages.parentNode.insertBefore(newbutton, pages);
-  }
+  // Insert the button before pages.
+  var pages = document.getElementsByClassName('pages')[0];
+  pages.parentNode.insertBefore(newbutton, pages);
 }
 
 init();

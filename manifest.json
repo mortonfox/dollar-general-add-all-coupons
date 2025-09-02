@@ -1,20 +1,17 @@
 {
-    "manifest_version": 3,
-    "name": "Dollar General - Add All Coupons",
-    "version": "0.0.2",
+  "manifest_version": 3,
+  "name": "Dollar General - Add All Coupons",
+  "version": "0.0.3",
+  "description": "In DG Digital Coupons, add all coupons and deals to My Coupons",
 
-    "description": "In DG Digital Coupons, add all coupons to My Coupons",
-
-    "action": {
-        "default_title": "dollar_general_add_all_coupons"
-    },
-
-    "content_scripts": [
-        {
-            "matches": [
-                "https://www.dollargeneral.com/deals/coupons*"
-            ],
-            "js": ["main.js"]
-        }
-    ]
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.dollargeneral.com/coupons/*",
+        "https://www.dollargeneral.com/deals/*"
+      ],
+      "js": ["main.js"]
+    }
+  ]
 }
+

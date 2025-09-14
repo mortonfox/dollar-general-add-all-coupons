@@ -1,16 +1,16 @@
 async function clickLoadMore() {
-  let loadMoreBtn;
-
-  while ((loadMoreBtn = document.querySelector('button, a')) &&
-         [...document.querySelectorAll('button, a')].some(el => el.innerText.trim().toLowerCase() === 'load more')) {
-
+  for (;;) {
     // Find the visible "Load More" button
-    loadMoreBtn = [...document.querySelectorAll('button, a')]
+    let loadMoreBtn = [...(document.querySelectorAll('button, a') || [])]
       .find(el => el.innerText.trim().toLowerCase() === 'load more');
 
     if (!loadMoreBtn) break;
 
     console.log('Clicking Load More…');
+
+    // Bring button into view to show what we are doing.
+    loadMoreBtn.scrollIntoView({ block: 'center' });
+
     loadMoreBtn.click();
 
     // Wait for new coupons to load
@@ -45,6 +45,7 @@ async function runSelect(event) {
 }
 
 function init() {
+  // Don't add button if already added.
   if (document.getElementById('add_all_coupons')) return;
 
   const newbutton = document.createElement('button');
@@ -54,6 +55,7 @@ function init() {
   newbutton.appendChild(document.createTextNode('Add All Coupons/Deals'));
   newbutton.addEventListener('click', runSelect);
 
+  // Look for insertion point. If not found, then insert at top of body as a fallback.
   const target = document.querySelector('.pages, main, body');
   if (target) {
     target.prepend(newbutton);

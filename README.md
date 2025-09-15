@@ -14,6 +14,6 @@ Click on "Load unpacked extension" and navigate to the folder in which you clone
 
 ## Usage
 
-Once you've installed and enabled this extension, go to the Dollar General Digital Coupons & Cash Back page and find the "Add All Coupons/Deals" button at the top. Click on it and it'll add all the coupons to "My Coupons".
+Once you've installed and enabled this extension, go to the Dollar General Digital Coupons & Cash Back page and find the "Add All Coupons/Deals" button at the top. Click on the button and it'll load all the coupons into view and add them to "Saved Coupons and Cash Back" in "myDG Wallet".
 
 <img width="1624" height="164" alt="Add All Coupons/Deals Button" src="https://github.com/user-attachments/assets/56ce25ed-7f89-4d57-ad69-62d545380555" />

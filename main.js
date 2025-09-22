@@ -1,7 +1,9 @@
+// jshint esversion: 8
+
 async function clickLoadMore() {
   for (;;) {
     // Find the visible "Load More" button
-    let loadMoreBtn = [...(document.querySelectorAll('button, a') || [])]
+    let loadMoreBtn = [...document.querySelectorAll('button, a')]
       .find(el => el.innerText.trim().toLowerCase() === 'load more');
 
     if (!loadMoreBtn) break;

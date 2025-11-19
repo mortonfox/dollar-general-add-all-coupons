@@ -1,7 +1,7 @@
 // jshint esversion: 8
 
 // Debug mode - set to false once working
-const DEBUG = true;
+const DEBUG = false;
 
 function log(...args) {
   if (DEBUG) console.log('[DG Extension]', ...args);

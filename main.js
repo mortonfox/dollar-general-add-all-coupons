@@ -23,12 +23,8 @@ async function clickLoadMore() {
 }
 
 function clickAllCoupons() {
-  // Look for buttons with text like "Clip", "Add", "Add Deal"
-  const buttons = Array.from(document.querySelectorAll('button, a'))
-    .filter(el => {
-      const txt = el.innerText.trim().toLowerCase();
-      return txt === 'clip' || txt === 'add' || txt.includes('add deal');
-    });
+  // Look for buttons with 'clip' in the aria-label attribute.
+  const buttons = Array.from(document.querySelectorAll('button[aria-label*="clip" i]'));
 
   let clicked = 0;
   for (const btn of buttons) {

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Dollar General - Add All Coupons",
-  "version": "0.0.3",
-  "description": "In DG Digital Coupons, add all coupons and deals to My Coupons",
+  "version": "0.0.4",
+  "description": "In DG Digital Coupons, add all coupons and deals to myDG Wallet",
 
   "content_scripts": [
     {

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a Chrome extension that adds an "Add All Coupons" button to the Dollar General [Digital Coupons & Cash Back page](https://www.dollargeneral.com/deals/coupons). The Javascript action on this button will click on all the coupons in one shot, adding all of them to "My Coupons".
+This is a Chrome extension that adds an "Add All Coupons" button to the Dollar General [Digital Coupons & Cash Back page](https://www.dollargeneral.com/deals/coupons). The Javascript action on this button will click on all the coupons in one shot, adding all of them to "myDG Wallet".
 
 ## Installation
 
